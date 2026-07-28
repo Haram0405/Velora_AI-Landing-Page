@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-primary font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-primary;
+  }
+
+  /* Text selection styled in the brand red, matching the premium theme */
+  ::selection {
+    background-color: #C0392B;
+    color: #FFFFFF;
+  }
+
+  ::-moz-selection {
+    background-color: #C0392B;
+    color: #FFFFFF;
+  }
+
+  /* Visible keyboard focus for accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #C0392B;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Custom scrollbar matching the site's beige/red palette (WebKit) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F8F3EB;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #C9B08A;
+    border-radius: 999px;
+    border: 2px solid #F8F3EB;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #C0392B;
+  }
+
+  /* Custom scrollbar (Firefox) */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #C9B08A #F8F3EB;
+  }
+
+  /* Hide the native cursor only where our custom animated cursor takes
+     over: fine-pointer devices (mouse/trackpad) that don't prefer
+     reduced motion. Touch devices and reduced-motion users keep the
+     native cursor untouched. */
+  @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    body,
+    a,
+    button,
+    input,
+    textarea,
+    [role='button'] {
+      cursor: none;
+    }
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-7xl mx-auto px-6 md:px-10 lg:px-16;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-button hover:bg-button-hover text-white font-body font-medium px-7 py-3.5 rounded-full transition-all duration-300 shadow-soft hover:shadow-lift hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent border border-borderc hover:border-primary text-primary font-body font-medium px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97];
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 bg-white border border-borderc rounded-full px-4 py-1.5 text-sm text-secondary font-medium shadow-sm;
+  }
+
+  .eyebrow {
+    @apply uppercase tracking-[0.2em] text-xs md:text-sm font-semibold text-button;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
