@@ -18,7 +18,7 @@ A modern, elegant, and fully responsive **AI SaaS Landing Page** built with **Re
 </p>
 
 ### 🌐 Live Demo
-**👉 https://your-demo-link.vercel.app**
+**👉 https://velora-ai-landing-page.vercel.app/**
 
 </div>
 
