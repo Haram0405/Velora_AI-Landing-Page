@@ -199,31 +199,21 @@ npm run build
 
 ## Desktop
 
-> Add your desktop screenshot here
 
-```
-/public/screenshots/desktop.png
-```
+<img width="868" height="532" alt="image" src="https://github.com/user-attachments/assets/d04089a5-3790-4cb3-9b01-01e114751518" />
+
 
 ---
 
-## Tablet
+## Responsive Navbar
 
-> Add your tablet screenshot here
-
-```
-/public/screenshots/tablet.png
-```
+<img width="248" height="443" alt="image" src="https://github.com/user-attachments/assets/d8573b1e-121e-471b-b2cd-ef9528b8f20e" />
 
 ---
 
 ## Mobile
 
-> Add your mobile screenshot here
-
-```
-/public/screenshots/mobile.png
-```
+<img width="248" height="549" alt="image" src="https://github.com/user-attachments/assets/a0cab657-bac4-4b5b-abdd-3a48ffa4aec8" />
 
 ---
 
@@ -244,13 +234,8 @@ npm run build
 
 ### **Haram Kashif**
 
-Frontend Developer
+Frontend Developer | Software Engineer | MERN Stack Developer
 
-GitHub:
-https://github.com/Haram0405
-
-LinkedIn:
-https://www.linkedin.com/in/your-linkedin-profile
 
 ---
 
